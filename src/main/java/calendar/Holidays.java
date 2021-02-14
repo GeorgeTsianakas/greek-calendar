@@ -1,86 +1,54 @@
 package calendar;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDate;
 
 public class Holidays {
 
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private int year;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate newYearDay;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate epiphany;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate greenMonday;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate march25;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate orthodoxEasterFriday;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate orthodoxEasterDay;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate orthodoxEasterMonday;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate mayDay;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate holySpirit;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate theAssumption;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate october28;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate christmasDay;
+    @Getter
+    @Setter(AccessLevel.PROTECTED)
     private LocalDate christmasNextDay;
-
-    public Holidays(int year) {
-        this.year = year;
-    }
-
-    public int Year() {
-        return year;
-    }
-
-    protected void setOrthodoxEasterDay(LocalDate date) {
-        orthodoxEasterDay = date;
-    }
-
-    public LocalDate getNewYearDay() {
-        return newYearDay;
-    }
-
-    public LocalDate getEpiphany() {
-        return epiphany;
-    }
-
-    public LocalDate getGreenMonday() {
-        return greenMonday;
-    }
-
-    public LocalDate getMarch25() {
-        return march25;
-    }
-
-    public LocalDate getOrthodoxEasterFriday() {
-        return orthodoxEasterFriday;
-    }
-
-    public LocalDate getOrthodoxEasterDay() {
-        return orthodoxEasterDay;
-    }
-
-    public LocalDate getOrthodoxEasterMonday() {
-        return orthodoxEasterMonday;
-    }
-
-    public LocalDate getMayDay() {
-        return mayDay;
-    }
-
-    public LocalDate getHolySpirit() {
-        return holySpirit;
-    }
-
-    public LocalDate getTheAssumption() {
-        return theAssumption;
-    }
-
-    public LocalDate getOctober28() {
-        return october28;
-    }
-
-    public LocalDate getChristmasDay() {
-        return christmasDay;
-    }
-
-    public LocalDate getChristmasNextDay() {
-        return christmasNextDay;
-    }
 
 }
