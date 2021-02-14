@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Holidays {
 
@@ -50,5 +52,31 @@ public class Holidays {
     @Getter
     @Setter(AccessLevel.PROTECTED)
     private LocalDate christmasNextDay;
+
+    public List<LocalDate> getAllGreekPublicHolidays() {
+        List<LocalDate> list = new ArrayList<LocalDate>();
+
+        addIfNotPresent(list, getNewYearDay());
+        addIfNotPresent(list, getEpiphany());
+        addIfNotPresent(list, getGreenMonday());
+        addIfNotPresent(list, getMarch25());
+        addIfNotPresent(list, getOrthodoxEasterFriday());
+        addIfNotPresent(list, getOrthodoxEasterDay());
+        addIfNotPresent(list, getOrthodoxEasterMonday());
+        addIfNotPresent(list, getMayDay());
+        addIfNotPresent(list, getHolySpirit());
+        addIfNotPresent(list, getTheAssumption());
+        addIfNotPresent(list, getOctober28());
+        addIfNotPresent(list, getChristmasDay());
+        addIfNotPresent(list, getChristmasNextDay());
+
+        return list;
+    }
+
+    private void addIfNotPresent(List<LocalDate> list, LocalDate date) {
+        if (!list.contains(date)) {
+            list.add(date);
+        }
+    }
 
 }
