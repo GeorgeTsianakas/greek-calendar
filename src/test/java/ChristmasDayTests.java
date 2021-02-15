@@ -25,7 +25,6 @@ public class ChristmasDayTests {
     private int input;
     private LocalDate expected;
 
-    //This constructor must be provided in order parameterized tests work
     public ChristmasDayTests(int input, LocalDate expected) {
         this.input = input;
         this.expected = expected;

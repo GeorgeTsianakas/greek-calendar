@@ -9,28 +9,28 @@ public class HolidayCalculator {
 
         holidays.setYear(year);
 
-        holidays.setNewYearDay(LocalDate.of(year, 1, 1));               //New Years Eve
+        holidays.setNewYearDay(LocalDate.of(year, 1, 1));
 
-        holidays.setEpiphany(LocalDate.of(year, 1, 6));                 //Epiphany Day
+        holidays.setEpiphany(LocalDate.of(year, 1, 6));
 
-        holidays.setGreenMonday(orthodoxEaster(year).minusDays(48));                       //Green Monday
+        holidays.setGreenMonday(orthodoxEaster(year).minusDays(48));
 
-        holidays.setMarch25(LocalDate.of(year, 3, 25));                 //March 25nth
+        holidays.setMarch25(LocalDate.of(year, 3, 25));
 
-        holidays.setOrthodoxEasterFriday(orthodoxEaster(year).minusDays(2));               //Easter Friday
-        holidays.setOrthodoxEasterDay(orthodoxEaster(year));                               //Easter Day
-        holidays.setOrthodoxEasterMonday(orthodoxEaster(year).plusDays(1));                //Easter Monday
+        holidays.setOrthodoxEasterFriday(orthodoxEaster(year).minusDays(2));
+        holidays.setOrthodoxEasterDay(orthodoxEaster(year));
+        holidays.setOrthodoxEasterMonday(orthodoxEaster(year).plusDays(1));
 
-        holidays.setMayDay(LocalDate.of(year, 5, 1));                   //May Day
+        holidays.setMayDay(LocalDate.of(year, 5, 1));
 
-        holidays.setHolySpirit(orthodoxEaster(year).plusDays(50));                         //Holy Spirit Day
+        holidays.setHolySpirit(orthodoxEaster(year).plusDays(50));
 
-        holidays.setTheAssumption(LocalDate.of(year, 8, 15));           //15nth of August
+        holidays.setTheAssumption(LocalDate.of(year, 8, 15));
 
-        holidays.setOctober28(LocalDate.of(year, 10, 28));              //20th of October
+        holidays.setOctober28(LocalDate.of(year, 10, 28));
 
-        holidays.setChristmasDay(LocalDate.of(year, 12, 25));           //Christmas day
-        holidays.setChristmasNextDay(LocalDate.of(year, 12, 26));       //2nd Christmas day
+        holidays.setChristmasDay(LocalDate.of(year, 12, 25));
+        holidays.setChristmasNextDay(LocalDate.of(year, 12, 26));
 
         return holidays;
     }
